@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- PWA / Home screen -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ec4899" />
+
+    <!-- iOS home screen support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Symbiose" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/logo512.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+
+    <!-- SEO / Share -->
+    <meta name="description" content="Compteur de points pour le jeu de société Symbiose" />
+
+    <title>Symbiose</title>
+
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        background: linear-gradient(145deg, #fce7f3 0%, #f0fdf4 40%, #eff6ff 75%, #fff7ed 100%);
+        min-height: 100dvh;
+        /* Safe area for notches / home bar */
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      #root { min-height: 100dvh; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
