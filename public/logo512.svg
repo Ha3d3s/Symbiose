@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background circle with gradient -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7fb"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </radialGradient>
+    <radialGradient id="haloP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#86efac" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#86efac" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloO" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdba74" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fdba74" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- App background -->
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle outer ring -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+
+  <!-- Petal halos for each quadrant -->
+  <circle cx="148" cy="148" r="120" fill="url(#haloP)"/>
+  <circle cx="364" cy="148" r="120" fill="url(#haloG)"/>
+  <circle cx="364" cy="364" r="120" fill="url(#haloO)"/>
+  <circle cx="148" cy="364" r="120" fill="url(#haloB)"/>
+
+  <!-- Decorative floral dots -->
+  <circle cx="90"  cy="90"  r="10" fill="#f9a8d4" opacity="0.5"/>
+  <circle cx="120" cy="70"  r="6"  fill="#f9a8d4" opacity="0.4"/>
+  <circle cx="70"  cy="120" r="6"  fill="#f9a8d4" opacity="0.4"/>
+
+  <circle cx="422" cy="90"  r="10" fill="#86efac" opacity="0.5"/>
+  <circle cx="392" cy="70"  r="6"  fill="#86efac" opacity="0.4"/>
+  <circle cx="442" cy="120" r="6"  fill="#86efac" opacity="0.4"/>
+
+  <circle cx="422" cy="422" r="10" fill="#fdba74" opacity="0.5"/>
+  <circle cx="392" cy="442" r="6"  fill="#fdba74" opacity="0.4"/>
+  <circle cx="442" cy="392" r="6"  fill="#fdba74" opacity="0.4"/>
+
+  <circle cx="90"  cy="422" r="10" fill="#93c5fd" opacity="0.5"/>
+  <circle cx="120" cy="442" r="6"  fill="#93c5fd" opacity="0.4"/>
+  <circle cx="70"  cy="392" r="6"  fill="#93c5fd" opacity="0.4"/>
+
+  <!-- ── Quadrant circles (animal backgrounds) ── -->
+  <!-- Top-left: Libellule (pink) -->
+  <circle cx="148" cy="148" r="88" fill="#fce7f3" stroke="#f9a8d4" stroke-width="3"/>
+  <!-- Top-right: Grenouille (green) -->
+  <circle cx="364" cy="148" r="88" fill="#dcfce7" stroke="#86efac" stroke-width="3"/>
+  <!-- Bottom-right: Koï (orange) -->
+  <circle cx="364" cy="364" r="88" fill="#ffedd5" stroke="#fdba74" stroke-width="3"/>
+  <!-- Bottom-left: Escargot (blue) -->
+  <circle cx="148" cy="364" r="88" fill="#dbeafe" stroke="#93c5fd" stroke-width="3"/>
+
+  <!-- Center connecting arcs -->
+  <path d="M 148 210 Q 256 256 148 302" fill="none" stroke="#f9a8d4" stroke-width="2" opacity="0.5"/>
+  <path d="M 210 148 Q 256 256 302 148" fill="none" stroke="#86efac" stroke-width="2" opacity="0.5"/>
+  <path d="M 364 210 Q 256 256 364 302" fill="none" stroke="#fdba74" stroke-width="2" opacity="0.5"/>
+  <path d="M 210 364 Q 256 256 302 364" fill="none" stroke="#93c5fd" stroke-width="2" opacity="0.5"/>
+
+  <!-- Center circle -->
+  <circle cx="256" cy="256" r="52" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+
+  <!-- ── DRAGONFLY (top-left, pink) ── -->
+  <g transform="translate(148,148)">
+    <!-- body -->
+    <ellipse cx="0" cy="4"  rx="5"  ry="22" fill="#be185d" opacity="0.9"/>
+    <ellipse cx="0" cy="-6" rx="7"  ry="7"  fill="#be185d"/>
+    <!-- wings -->
+    <ellipse cx="-22" cy="-8" rx="20" ry="9" fill="#fbcfe8" opacity="0.8" transform="rotate(-20 -22 -8)"/>
+    <ellipse cx="22"  cy="-8" rx="20" ry="9" fill="#fbcfe8" opacity="0.8" transform="rotate(20 22 -8)"/>
+    <ellipse cx="-20" cy="6"  rx="18" ry="7" fill="#f9a8d4" opacity="0.7" transform="rotate(-12 -20 6)"/>
+    <ellipse cx="20"  cy="6"  rx="18" ry="7" fill="#f9a8d4" opacity="0.7" transform="rotate(12 20 6)"/>
+    <!-- eyes -->
+    <circle cx="-4" cy="-8" r="3" fill="white" opacity="0.9"/>
+    <circle cx="4"  cy="-8" r="3" fill="white" opacity="0.9"/>
+    <circle cx="-4" cy="-8" r="1.4" fill="#be185d"/>
+    <circle cx="4"  cy="-8" r="1.4" fill="#be185d"/>
+  </g>
+
+  <!-- ── FROG (top-right, green) ── -->
+  <g transform="translate(364,148)">
+    <!-- body -->
+    <ellipse cx="0" cy="14" rx="28" ry="20" fill="#16a34a"/>
+    <!-- eyes -->
+    <circle cx="-16" cy="-8" r="14" fill="#16a34a"/>
+    <circle cx="16"  cy="-8" r="14" fill="#16a34a"/>
+    <circle cx="-16" cy="-8" r="8"  fill="#bbf7d0"/>
+    <circle cx="16"  cy="-8" r="8"  fill="#bbf7d0"/>
+    <circle cx="-16" cy="-8" r="4"  fill="#14532d"/>
+    <circle cx="16"  cy="-8" r="4"  fill="#14532d"/>
+    <circle cx="-14" cy="-10" r="1.5" fill="white"/>
+    <circle cx="14"  cy="-10" r="1.5" fill="white"/>
+    <!-- smile -->
+    <path d="M -12 20 Q 0 28 12 20" stroke="#bbf7d0" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- feet -->
+    <ellipse cx="-26" cy="30" rx="12" ry="5" fill="#15803d" transform="rotate(-20 -26 30)"/>
+    <ellipse cx="26"  cy="30" rx="12" ry="5" fill="#15803d" transform="rotate(20 26 30)"/>
+  </g>
+
+  <!-- ── KOI (bottom-right, orange) ── -->
+  <g transform="translate(364,364)">
+    <!-- body -->
+    <path d="M -50 0 Q -20 -36 26 -14 Q 46 0 26 14 Q -20 36 -50 0 Z" fill="#ea580c"/>
+    <!-- tail -->
+    <path d="M 24 -14 Q 42 -22 48 0 Q 42 22 24 14 Z" fill="#fdba74"/>
+    <!-- head fin -->
+    <path d="M -50 0 Q -56 -16 -54 0 Q -56 16 -50 0 Z" fill="#fdba74"/>
+    <!-- scales -->
+    <path d="M -30 -10 Q -10 -18 16 -10" stroke="#fff7ed" stroke-width="2.5" fill="none" opacity="0.7"/>
+    <path d="M -30  10 Q -10  18 16  10" stroke="#fff7ed" stroke-width="2.5" fill="none" opacity="0.7"/>
+    <!-- eye -->
+    <circle cx="-38" cy="0" r="6" fill="white"/>
+    <circle cx="-38" cy="0" r="3" fill="#1c1917"/>
+    <circle cx="-36" cy="-2" r="1.2" fill="white"/>
+    <!-- dorsal fin -->
+    <path d="M -10 -14 Q -2 -26 8 -16" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- ── SNAIL (bottom-left, blue) ── -->
+  <g transform="translate(148,364)">
+    <!-- body/foot -->
+    <ellipse cx="-10" cy="22" rx="32" ry="12" fill="#bfdbfe"/>
+    <!-- shell -->
+    <circle cx="16" cy="-4"  r="30" fill="#93c5fd" opacity="0.3" stroke="#3b82f6" stroke-width="2.5"/>
+    <circle cx="16" cy="-4"  r="20" fill="none"    stroke="#3b82f6" stroke-width="2.5" opacity="0.55"/>
+    <circle cx="16" cy="-4"  r="12" fill="none"    stroke="#1d4ed8" stroke-width="2.5" opacity="0.45"/>
+    <circle cx="16" cy="-4"  r="5"  fill="#1d4ed8"  opacity="0.35"/>
+    <!-- neck -->
+    <path d="M -30 22 Q -22 6 -8 12" stroke="#93c5fd" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- antennae -->
+    <circle cx="-28" cy="6"  r="3" fill="#bfdbfe"/>
+    <circle cx="-34" cy="0"  r="2.5" fill="#93c5fd"/>
+    <circle cx="-16" cy="4"  r="3" fill="#bfdbfe"/>
+    <circle cx="-14" cy="-2" r="2.5" fill="#93c5fd"/>
+  </g>
+
+  <!-- ── Center "S" monogram ── -->
+  <text
+    x="256" y="268"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="44"
+    font-style="italic"
+    font-weight="700"
+    fill="url(#centerGrad)"
+  >S</text>
+  <defs>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#ec4899"/>
+      <stop offset="33%"  stop-color="#16a34a"/>
+      <stop offset="66%"  stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+</svg>
